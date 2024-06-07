@@ -1,0 +1,98 @@
+<!--Started 27-12-2022-->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- The components of the page are Head and Body -->
+    <head>
+        <!-- Contains Page Title, Meta and SEO Tags 
+        use meta to define browser behaviour, it is self closing-->
+        <meta charset="UTF-8">
+        <title>
+            HTML Project Page
+        </title>
+    </head>
+    <body> 
+        <!-- The body contains the Main and the footer -->
+        <main>
+        <!-- Headers -->
+        <h1>HTML Project</h1>
+        <h2>Header size 2</h2>
+        <h3>Header Size 3</h3>
+        <h4>Header size 4</h4>
+        <h5>Header size 5</h5>
+        <h6>Header size 6</h6>
+        <!-- Note: you can only have one Header on the page -->
+        <!-- Paragraph -->
+        <p>The purpose of this document is to test my understanding of HTML5 concepts</p>
+        <!--page Break-->
+        <br>
+        <!-- to link an external page (Anchor an element)-->
+        <a href="http://www.google.com" target="_blank">follow this link to google</a>
+        <!-- to link to a section on the page, define the id of the section and insert it in href-->
+        <p>jump to <a href= "#footer">bottom of page</a></p>
+        <!-- Embed a link in a paragraph -->
+        <p>Within this paragraph is an embedded link to <a href="https://www.amazon.ca/ref=nav_logo" target="_tab">a website of your choosing</a></p>
+        <!-- Lists, organised lists and unorganised lists -->
+        <p>Sample of an Unorganised list</p>
+        <ul>
+            <li>unorganised list 1</li>
+            <li>unorganised list 2</li>
+            <li>unorganised list 3</li>
+        </ul>
+        <br>
+        <p>Sample of Organised List</p>
+        <ol>
+            <li>organised list 1</li>
+            <li>organised list 2</li>
+            <li>organised list 3</li>
+        </ol>
+        <br>
+        <!-- Insert an Image, The Image Tag is a self closing Tag-->
+        <img src="" alt="Displaying the alt instead">
+        <br>
+        <!-- Sectioning for creating separate sections-->
+        <section></section>
+        <!-- Captions in pictures -->
+        <figure>
+            <img src="C:\Users\Christopher\Desktop\Hands.jpg" alt="No Alt Needed">
+            <figcaption>Here Lies the Caption of the picture</figcaption>
+        </figure>
+        <!-- Custom Texts in HTML -->
+        Use <em>Em</em> to emphasize a text.<br>
+        Use <strong>Strong</strong> to make a text strong.
+        <!-- Creating a form with inputs -->
+        <form action="URL for submission">
+            <fieldset>
+                <legend>Details</legend>
+                <input type="text" name="Customer" id="Customer" placeholder="Customer Name" required>
+                <button type="submit" id="submit">Submit</button>
+            </fieldset>
+            <fieldset>
+                <legend>For Radio Group</legend>
+                <!-- The attributes are type, id, value and name 
+                Type defines the type of input, text, radio or checkbox
+                id is the specifiv id of the element
+                value is the actual input value associated with the selected option
+                The name attribute decides what options belong together and doesnt allow selecting multiple under the same name 
+            Add "checked" to the input you want selected by defaukt-->
+                <label><input type="radio" id="tall" value="tall" name="height" checked>Tall</label>
+                <label><input type="radio" id="average" value="average" name="height">Average</label>
+                <label><input type="radio" id="short" value="ahort" name="height">Short</label>
+            </fieldset>
+            <fieldset>
+                <legend>For Checkboxes</legend>
+                <!-- Observe the different ways of using the label -->
+                <!-- NOte that the Name attribute is similar to enable server find inputs belonging to the same group when there are more options -->
+                <input id="loving" type="checkbox" name="Personality" value="loving" checked><label for="loving">Loving</label>
+                <input id="lazy" type="checkbox" name="Personality" value="lazy"><label for="lazy">Lazy</label>
+                <input id="energetic" type="checkbox" name="Personality" value="energetic"><label for="energetic">Energetic</label>
+                <input id="shy" type="checkbox" name="personality" value="shy"><label for="shy">Shy</label>
+            </fieldset>
+        </form>
+        </main>
+        <footer id="footer">
+            <p>No Copyright Infringement </p>
+        </footer>
+    </body>
+</html>
+
+<html></html>

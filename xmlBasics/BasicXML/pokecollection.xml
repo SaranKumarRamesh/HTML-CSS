@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE colletion SYSTEM "poke.dtd">
+
+<?xml-stylesheet type="text/css" href="style.css" ?>
+
+<collection>
+    <pokemon hp = "45">
+        <id> 1 </id>
+        <name> Bulbasaur </name>
+        <type> grass </type>
+    </pokemon>
+
+    <pokemon hp = "39">
+        <id> 2 </id>
+        <name> Charmander </name>
+        <type> fire </type>
+    </pokemon>
+    
+    <pokemon hp = "44">
+        <id> 3 </id>
+        <name> Squirtle </name>
+        <type> water </type>
+    </pokemon>
+</collection>

@@ -1,0 +1,7 @@
+<!ELEMENT colletion(pokemon)+ > 
+<!ELEMENT pokemon (id, name , type) >
+<!ELEMENT id (#CDATA) >
+<!ELEMENT name (#CDATA) >
+<!ELEMENT type (#CDATA) >
+
+<!ATTLIST pokemon hp CDATA #REQUIRED >

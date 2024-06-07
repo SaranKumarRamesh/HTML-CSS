@@ -1,0 +1,40 @@
+
+/* 
+================
+Header
+================
+*/
+
+header, main {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+img.logo {
+    height: 60px;
+}
+header>img {
+    width: 100%;
+}
+
+/* Nav */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 
+==============
+Main
+==============
+*/
+main {
+    display: flex;
+}
+aside>img {
+    width: 300px;
+}

@@ -1,0 +1,52 @@
+/*** Base Style ***/
+p {
+    margin: 10px;
+}
+div {
+    display: inline-block;
+    border-radius: 40px 40px 40px 0px;
+    border: 1px solid grey;
+    background-color: white;
+}
+/*** Position speech bubbles ***/
+#cow {
+    position: absolute;
+    top: 350px;
+    left: 530px;
+    opacity: 0;
+}
+
+#sheep {
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    opacity: 0;
+}
+
+#rooster {
+    position: absolute;
+    top: 465px;
+    left: 330px;
+    opacity: 0;
+}
+
+#dog {
+    position: absolute;
+    top: 386px;
+    left: 423px;
+    opacity: 0;
+}
+
+#horse {
+    position: absolute;
+    top: 240px;
+    left: 255px;
+    opacity: 0;
+}
+
+#goat {
+    position: absolute;
+    top: 380px;
+    left: 160px;
+    opacity: 0;
+}

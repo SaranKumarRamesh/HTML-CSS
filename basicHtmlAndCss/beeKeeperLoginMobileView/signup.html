@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Filename: signup.html
+Author: Siegmund Chidiebere Obi 000519356
+Date: 20-10-2023
+Purpose: Final Exam
+-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Membership!</title>
+    <link rel="stylesheet" href="./css/formStyle.css">
+</head>
+<body>
+    <main>
+        <h1>Become a Member!</h1>
+        <form action="./testForm.html" method="get">
+            <fieldset>
+                <legend>Required Membership Information</legend>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" placeholder="Name" autofocus required />
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required />
+                <label for="pword">Password:</label>
+                <input type="password" name="pword" id="pword" required />
+                <label for="memcat">Membership Category</label>
+                <select name="memcat" id="memcat">
+                    <option value="individual">Individual</option>
+                    <option value="family">Family</option>
+                    <option value="student">Student</option>
+                </select>
+            </fieldset>
+            <span>
+                <input type="checkbox" name="check" id="check" checked />
+                <label for="check">I would like to receive the newsletter</label>
+            </span>
+            <input type="submit" value="Join" class="btn">        
+        </form>
+    </main>
+</body>
+</html>

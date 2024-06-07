@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.box{
+            width:100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: grey;
+
+            transition: translate 3s, background-color 700ms;
+
+
+        }
+        div.box:hover{
+            translate: 0px 50px;
+            background-color: skyblue;
+        }
+        div.parent div{
+            width: 50px;
+            height: 50px;
+            background-color: thistle;
+            border: 1px solid grey;
+            margin: 10px;
+        }
+        div.parent:hover>div{
+            translate: 500px 0px;
+        }
+        .child1{
+            transition: all 2s ease;
+        }
+        .child2{
+            transition: all 2s ease-in 2s;
+        }
+        .child3{
+            transition: all 2s ease-out 4s;
+        }
+        .child4{
+            transition: all 2s ease-in-out 6s;
+        }
+        .child5{
+            transition: all 2s linear 8s;
+        }
+        .child6{
+            transition: all 2s cubic-bezier(.68, -0.55,.27,1.55) 10s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+        <div class="child6"></div>
+</div>
+</body>
+</html>

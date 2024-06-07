@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            outline: 1px solid gray;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 100px 300px 100px;
+            /* for responsive design */
+            /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  */ 
+            /* grid-gap: 10px 20px; */
+
+            grid-template-areas:    "header header  header"
+                                    "aside1 main    nav"
+                                    "aside2 main    nav"
+                                    "footer footer  footer";
+            /* justify-items: center; */
+            /* align-items: center; */
+
+        }
+        header{
+            /* grid-column: 1/4; */
+            grid-area: header;
+        }
+        main{            
+            grid-area: main;
+            align-self: center;
+            /* justify-self: center; */
+        }
+        nav{
+            
+            grid-area: nav;
+        }
+        aside:first-of-type{
+            
+            grid-area: aside1;
+        }
+        aside:last-of-type{
+            
+            grid-area: aside2;
+        }
+        footer{
+            
+            grid-area: footer;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><p>Header</p></header>
+        <nav><p>Nav</p></nav>
+        <main><p>Main</p></main>
+        <aside><p>Aside1</p></aside>
+        <aside><p>Aside2</p></aside>
+        <footer><p>Footer</p></footer>
+    </div>
+</body>
+</html>

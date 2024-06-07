@@ -1,0 +1,28 @@
+﻿@charset "utf-8";
+
+/*
+   Filename: code5-2_flex.css
+   Author: Siegmund Chidiebere Obi ID: 000519356
+   Date: 04/10/2023
+   Purpose: Tutorial 5 Social Media Sites
+*/
+section{
+   display: flex;
+   flex-flow: row;
+   flex-wrap: wrap-reverse;
+}
+div.card{
+   /* display: flex; */
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 200px;
+}
+div.card{
+   display: flex;
+   flex-flow: column;
+   flex-wrap: none;
+   justify-content: space-between;
+   align-items: center;
+}
+
+

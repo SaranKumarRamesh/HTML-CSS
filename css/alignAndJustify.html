@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container{
+            background-color: grey;
+            display: flex;
+
+        }
+        div.one, div.two, div.three{
+            background-color: honeydew;
+            border: 1px solid grey;
+        }
+        .one{
+            width: 200px;
+            height: 100px;            
+        }
+        .two{
+            width: 100px;
+            height: 200px;            
+        }
+        .three{
+            width: 300px;
+            height: 150px;   
+        }
+        .justify-content{
+            justify-content: center;
+            justify-content: flex-end; /*end of the flex*/
+            justify-content: space-around; /*space between items*/
+            justify-content: space-between;/*creates space only between items*/
+            justify-content: space-evenly; /*even space between items*/
+            justify-content: stretch; /*stretch to fill the space*/
+
+        }
+        div.align-content{
+            height: 600px;
+            flex-wrap: wrap;
+
+            align-content: center;
+            align-content: flex-end;
+            align-content: space-around;
+        }
+        div.align-items{
+            align-items: center;
+            align-items: flex-end;
+            align-items: baseline;
+        }
+        div.align-items div.three{
+            align-self: center; /*to align a single child element*/
+        }
+    </style>
+</head>
+<body>
+    <h2>Justify content - main axis</h2>
+    <p>works along horizontal axis</p>
+    <div class="justify-content container"> <!--use space between names to assign multiple classes-->
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+
+    <h2>align content - cross axis</h2>
+    <p>must have multiple lines because it works along vertical axis</p>
+    <div class="align-content container"> <!--use space between names to assign multiple classes-->
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+
+    <h2>align items - cross axis</h2>
+    <p>aligns individual items within a div</p>
+    <div class="align-items container"> <!--use space between names to assign multiple classes-->
+        <div class="one"><p>word</p></div>
+        <div class="two"><p>word</p></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>

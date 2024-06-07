@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-shadow: blueviolet 5px 10px 1px, greenyellow 10px 15px 3px;
+            /*first number for left/right, second for up/down, third for blur */
+            box-shadow: hotpink 2px 10px 3px;
+        }
+        div.box{
+            width: 300px;
+            height: 300px;
+            box-shadow: black 10px 10px 8px;
+
+            /* Using directions for gradient */
+            /* background: linear-gradient( to bottom,red,greenyellow, cyan); */
+            /* using angles for gradient */
+            /* background: linear-gradient( 45deg,red,greenyellow, cyan); */
+            /* background: linear-gradient( to right ,red 30%,greenyellow 50%, cyan 70%); */
+            /* background: radial-gradient( closest-side, red 30%,greenyellow 50%, cyan 70%); */
+            /* background: radial-gradient( farthest-side, red,greenyellow, cyan); */
+            /* background: radial-gradient( circle farthest-side, red,greenyellow, cyan); */
+            background: repeating-radial-gradient( circle , red,greenyellow, cyan 20%);
+            opacity: 40%;            
+        }
+
+        h2{
+            text-shadow: darkblue 0px 0px 5px;
+            color: white;
+        }
+        .button{
+            /* width: 100px;
+            height: 100px; */
+            display: inline-block;
+            padding: 0px 10px;
+            background-color: red;
+            color: white;
+            border-radius: 20px;
+            box-shadow: inset rgb(225, 148, 148) 4px 4px 8px, inset rgb(150, 0, 0) -4px -4px 8px;
+        }
+        .button:active{
+            box-shadow: inset rgb(225, 148, 148) -4px -4px 8px, inset rgb(150, 0, 0) 4px 4px 8px;
+        }
+        .button:hover{
+            box-shadow: inset rgb(28, 58, 102) -4px -4px 8px, inset rgb(150, 0, 0) 4px 4px 8px;
+        }
+        .construction{
+            height: 40px;
+            width:400px;
+            background: repeating-linear-gradient(-45deg, yellow 0px 20px, black 20px 40px) 
+        }
+        body{
+            background-size: 50px 50px; 
+            background-repeat: repeat; /*default*/
+            background-image: radial-gradient(white, grey);
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Dramatic Text!!</h1>
+    <div class="box"></div>
+    <div>
+        <h2>Ghost</h2>
+    </div>
+    <div class="button"><p><a href="#">Click here</a></p></div>
+    <div class="construction"></div>
+</body>
+</html>

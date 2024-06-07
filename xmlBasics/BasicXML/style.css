@@ -1,0 +1,16 @@
+pokemon {
+    font-size: 1.5em;
+    border: 1px solid grey;
+    width: 300px;
+    margin: 10px auto;
+    background-color: turquoise;
+}
+
+* {
+    display: block;
+}
+
+name {
+    color: tomato;
+    text-align: center;
+}

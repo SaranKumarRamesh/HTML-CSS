@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    /* base */
+    nav ul{
+        display: flex;
+        padding: 0;
+        margin:0;
+        
+    }
+    nav li{
+        list-style: none;
+        border: 1px solid grey;
+        flex-grow:1;
+    }
+    nav a{
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+
+    nav a:hover{
+        background-color: grey;
+        color: white;
+    }
+
+    nav i.fa-bars{
+        display: none;
+    }
+    h3+p{
+        color: blue;
+    }
+
+    /* small screen design */
+    @media screen and (max-width: 600px){
+        nav ul{
+            display: none;
+            flex-direction: column;
+        }
+        nav i.fa-bars{
+            display: block;
+        }
+        nav i.fa-bars:hover+ul , nav ul:hover{
+            display: block;
+        }
+    }
+
+</style>
+<body>
+    <!-- nav>ul>(li>a[href="#"])*4 -emmet abbr-->
+    <nav>
+        <i class="fa fa-bars"></i>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+/* main style */
+article{
+    width: 49%;
+    float: left;
+}
+aside{
+    width: 49%;
+    float: left;
+}
+/* Header */
+h1{
+    background-color:grey;
+    /* color:white; */
+}
+/* article */
+ol{
+    list-style: upper-roman;
+}
+
+ol ol{
+    list-style: lower-alpha;
+}
+ul{
+    list-style:circle;
+}
+/* aside */
+h3{
+    font-size: x-large;
+}
+aside ul{
+    list-style: url(./icon.png);
+}
+aside ul li{
+    border: 1px solid grey;
+    font-size: 2rem;
+    list-style-position: inside;
+}

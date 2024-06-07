@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:focus{
+            background-color: blanchedalmond;
+        }
+        input:invalid{
+            background-color: burlywood;
+        }
+        input:focus:invalid{
+            background-color: red;
+        }
+        input:valid{
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="page.html" method="get">
+        <fieldset>
+            <legend>Info</legend>
+            <label for="name">Name: </label>
+            <input id="name" name="text" type="text" placeholder="Name" autofocus required/> 
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required/>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="###-###=####">
+            <label for="prov">Province:</label>
+            <select name="prov" id="prov" autocomplete="off">
+                <option value="" disabled>select option</option>
+                <option value="BC">British Colombia</option>
+                <option value="AB">Alberta</option>
+                <option value="SK" selected>Saskatchwan</option>
+            </select>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" list="cityList"/>
+            <datalist id="cityList">
+                <option value="Sasktoon" />
+                <option value="Regina" />
+                <option value="Moose Jaw" />
+            </datalist>            
+            <label for="bd">Birthday:</label>
+            <input type="date" name="bd" id="bd"/>
+            <input type="submit" value="click">
+        </fieldset>
+        <fieldset>
+            <legend> Feedback:</legend>
+            <label for="numItms">How many items have you purched?</label>
+            <input type="number" name="numItems" id="numItems"  min=1 step="2"/>
+            <label for="pur" > what did you purchase?</label>
+            <select name="pur" id ="pur" multiple>
+                <optgroup  label="Purchase">
+                    <option value="edit">Editng</option>
+                    <option value="gw">Ghost Writing</option>
+                </optgroup>
+                <optgroup  label="Products">
+                    <option value="one">Book One</option>
+                    <option value="two">Book Two</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        </br>
+        <fieldset>
+            <label for="ex">Rate your experience: </label>
+            1<input type="range" name="ex" id="ex" min="1" max="10" step="1" value="5">10
+            <label for="comments">Feedback:</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="comments"></textarea>
+            <label >Did you have a goood exprience?
+            <label for="gey">yes</label>
+            <input type="radio"  name ="gey" id="yes" value="yes"/>
+            <label for="gen">No</label>
+            <input type ="radio" name="gen" id="no" value="no"/>
+        </fieldset>
+        <input type="hidden" name="userID" value="123456"/>
+        <input type="reset" value="reset button"/>
+        <input type="submit" value="click">
+    </form>
+</body>
+</html>

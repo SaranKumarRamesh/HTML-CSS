@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Welcome to the Farm</title>
+</head>
+<body>
+    <!-- image from My Modern Met (https://mymodernmet.com/fantastic-portraits-of-farm/) retrieved: Aug 31, 2022 -->
+    <img src="./img/farm_animals.png" alt="image of farm animals in a barn" usemap="#barn" />
+    <map name="barn" >
+        <area shape="rect" coords="448, 320, 510, 430" alt="cow" onmouseover="moo()" href= "#" onmouseout="moo2()"/>
+        <area shape="rect" coords="207, 186, 246, 288" alt="horse" onmouseover="neigh()" href= "#" onclick="neigh2()"/>
+        <area shape="rect" coords="361, 382, 421, 532" alt="dog" onmouseover="ruff()" href= "#" onmouseout="ruff2()"/>
+        <area shape="circle" coords="265, 407, 50" alt="sheep" onmouseover="bah()" href="#" onmouseout="bah2()" />
+        <area shape="circle" coords="133, 383, 50" alt="goat" onmouseover="maa()" href="#" onmouseout="maa2()" />
+        <area shape="poly" coords="223, 535, 309,473, 276, 588" alt="rooster" onmouseover="cock_a_doodle_do()" href="#" onmouseout = "cock_a_doodle_do2()"/>
+    </map>
+    <div id="cow"><p>Moo!</p></div>
+    <div id="sheep"><p>Bah!</p></div>
+    <div id="rooster"><p>Cock-a-doodle-doo!</p></div>
+    <div id="dog"><p>Ruff!</p></div>
+    <div id="horse"><p>Neigh!</p></div>
+    <div id="goat"><p>Maa!</p></div>
+    <script src="./js/barnChat.js"></script>
+</body>
+</html>

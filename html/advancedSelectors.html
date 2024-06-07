@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul{
+            list-style-type: none;
+            
+        }
+        li{
+            display: inline;
+        } */
+        /* to select a specific ID */
+        li#one{
+            color:yellow;
+            background-color: black;
+        }
+        /* to select a specific class */
+        li.text{
+            color:green;
+        }
+        a[href]{
+            color: rebeccapurple;
+        }
+        a[href="about.html"]{
+            background-color: yellow;
+        }        
+        li[name~="some"]{
+            color:tomato;
+        }
+        li[name|="some"]{
+            color:violet;
+        }
+        li[name^="some"]{
+            color:yellowgreen;
+        }
+        a[href$="html"]{
+            color:cyan;
+        }
+        li[name*="list"]{
+            color:black;
+        }
+        body{
+            color:hotpink;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="text">Our List!</h1>
+        <ul>
+            <li id = "one">one</li>
+            <li class="text">two</li>
+            <li class="text">three</li>
+            <li><a href="#">four</a></li>
+            <li><a href="about.html">five</a></li>
+            <li><a>six</a></li>
+            <li name="some element">seven</li>
+            <li name="some list">eight</li>
+            <li name="some-element">nine</li>
+            <li name="some-list">ten</li>
+            <li name="someElement">eleven</li>
+            <li name="someList">twelve</li>
+            <li><a href="news.html">thirteen</a></li>
+            <li><a href="info.html">fourteen</a></li>
+        </ul>
+</body>
+</html>

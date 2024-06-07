@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:grey;
+            margin: 0;
+
+            height: 100vh;
+            width: 100vw;
+
+            display: grid;
+            /* justify-items: center; */
+            align-items: center;
+        }
+        main{
+            border: 1px solid grey;
+
+            background-image: url(http://placekitten.com/800/800);
+            /* background-image: url(http://placekitten.com/200/300); */
+            background-repeat: no-repeat;
+
+            /* background-size:contain; */
+            background-size:cover;
+            /* background-position:center; */
+        }
+        figure{
+            display: inline-block;
+        }
+        figcaption{
+            background-color: rgba(0,0, 0, 60%);
+            color: white;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        div{
+            padding: 20px;
+            margin: 20px;
+            background-color: white;/*comment out to make transparent*/
+            border: 5px dashed grey;
+        }
+        .quote1{
+            background-clip: border-box; /*Default*/
+        }
+        .quote2{
+            background-clip: padding-box; /*Default*/
+        }
+        .quote3{
+            background-clip: content-box; /*Default*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <figure>
+            <img src="http://placekitten.com/200/200" alt="kitten">
+            <figcaption>Meow!</figcaption>
+        </figure>
+        <figure>
+            <img src="http://placekitten.com/200/200" alt="kitten">
+            <figcaption>
+                <cite><a href="http://placekitten.com">Credit : Place Kitten</a></cite>
+            </figcaption>
+        </figure>
+        <div class="quote1">
+            <p><q>Time spent with cats is never wasted.</q> - Sigmund Freud</p>
+
+        </div>
+        <div class="quote2">
+            <p><q>Like all pure creatures, cats are practical.</q> - William S. Burroughs</p>
+
+        </div>
+        <div class="quote3">
+            <p><q>Cats choose us; we don't own them.</q> - Kristin Cast</p>
+
+        </div>
+    </main>
+</body>
+</html>

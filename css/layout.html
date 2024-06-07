@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        div{
+            display:inline-block;
+            border: 1px solid grey;
+
+        }
+        div:first-of-type{
+            display:block;
+            background-color: magenta;
+            /* height:15vh; view height */
+            height: calc(15vh - 2px);
+        }
+        div:nth-of-type(2){
+            background-color: gold;
+            width:calc(20%  - 2px);
+            height: calc(85vh - 2px);
+        }
+        div:nth-of-type(3){
+            background-color: greenyellow;
+            width:calc(40%  - 2px);
+            height: calc(85vh - 2px);
+        }
+        div:last-of-type{
+            background-color:cornflowerblue;
+            width:calc(40% - 2px);
+            height: calc(85vh - 2px);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        aside{
+            background-color: gold;
+        }
+        div{
+            width: 500px;
+            height: 300px;
+            background-color:grey;
+
+            display: grid;
+            place-items: center;
+
+            /* 2D transformations */
+            /*move along x and y axes */
+            transform: translate(100px, 50px); 
+
+            /* scale along x and y axes */
+            transform: scale(2, 0.5);
+
+            /* Skew along x and y axes */
+            transform: skew(20deg, 5deg);
+
+            transform: rotate(90deg);
+
+            /* 3D transformations */
+            /* to move along x y and z axes */
+            transform: translate3d(100px, 50px, 0px);
+
+            transform: rotateX(45deg);
+            transform: rotateY(45deg);
+            transform: rotateZ(45deg);
+            transform: perspective(200px) rotateX(45deg);
+        }
+        div:hover{
+            transform: scale(2, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hi, I am content!</p>
+    </div>
+    <aside>
+        <p>I follow the div</p>
+    </aside>
+</body>
+</html>

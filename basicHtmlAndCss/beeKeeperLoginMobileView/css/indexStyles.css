@@ -1,0 +1,179 @@
+/*
+Filename: indexStyle.css
+Author: Siegmund Chidiebere Obi 000519356
+Date: 20-10-2023
+Purpose: Final Exam
+*/
+
+/* import css normalization style */
+@import url(./normailzation.css);
+
+/*  
+==============
+Base Style
+==============
+*/
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: maroon;
+    text-align: center;
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: lemonchiffon;
+    display: table-cell;
+    vertical-align: bottom;
+}
+header{
+    background-color: lemonchiffon;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+img#logo{
+    width: 150px;
+}
+a.btn{
+    background-color: #F5AF25;
+    color: maroon;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    box-shadow:inset gold 4px 4px 8px, inset sienna -4px -4px 8px;
+}
+a.btn:active{
+    box-shadow:inset sienna 4px 4px 8px, inset gold -4px -4px 8px;
+}
+nav{
+    background-color: maroon;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav li{
+    list-style: none;
+    flex-grow: 1;
+}
+nav a{
+    display: block;
+    padding: 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: lemonchiffon;
+}
+nav a:hover{
+    background-color: #F5AF25;
+    color: maroon;
+}
+div.card:nth-of-type(1){
+    background-image: url(../img/urbanBeeKeeping.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.card:nth-of-type(2){
+    background-image: url(../img/queen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.card:nth-of-type(3){
+    background-image: url(../img/hives.jpg);
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    background-color: maroon;
+    padding: 8px 0px;    
+}
+footer p{
+    color: lemonchiffon;
+    text-align: center;
+    margin: 5px 0px;
+}
+/*  
+================
+Mobile Tablet design - up to 769px
+================
+*/
+@media only screen and (max-width: 769px){
+    img#logo{
+        display: none;
+    }
+    header div{
+        flex-direction: column-reverse;
+    }
+    a.btn{
+        align-self: flex-end;
+    }
+    article>img{
+        width: 100%;
+    }
+    div.card{
+        border: 1px solid maroon;
+        margin-bottom: 10px;
+    }
+    h3{
+        height: 90vw;
+        font-size: 30px;
+    }
+}
+/*  
+=============
+Desktop design - 770-1080px
+=============
+*/
+@media only screen and (min-width: 770px){
+    article>h2{
+        float: right;
+        width: 60%;
+    }
+    article>img{
+        float: left;
+        margin-right: 8px;
+        /*Instruction not included*/
+        padding-top: 80px; 
+    }
+    article::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    article p {
+        clear: right;
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid maroon;
+        border-radius: 10px;
+        margin: 10px 0px;
+    }
+    section h2{
+        width:100%;
+    }
+    div.card{
+        flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin: 0px 10px 10px 10px;
+    }
+    h3{
+        font-size: 25px;
+        height: 200px;
+    }
+}
+/*  
+==============
+Large Screen Design - over 1080px
+==============
+*/
+@media only screen and (min-width: 1080px){
+    main{
+        width: 1080px;
+        margin: auto;
+    }
+}

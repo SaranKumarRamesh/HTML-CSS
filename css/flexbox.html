@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+
+            /* direction default is row */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            flex-direction: row;
+
+            /* flex-wrap:wrap; */
+            /* flex-flow:row/column wrap; */
+        }
+
+        div{
+            /* width: 100px;  Bad Practice*/
+            flex-basis: 100px; /* instead of width */
+
+            padding: 10px;
+            text-align: center;
+            border: 1px solid grey;
+
+            flex-grow: 1;
+        }
+
+        div:nth-of-type(odd){
+            /* causes the flex to stretch to be even */
+            flex-grow: 14;
+            flex-shrink: 12;
+        }
+    </style>
+</head>
+<body>
+    <!--emmet =>  main.container>div{$}*12 -->
+    <main class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </main>    
+</body>
+</html>

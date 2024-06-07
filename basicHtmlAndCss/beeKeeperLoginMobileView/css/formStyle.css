@@ -1,0 +1,71 @@
+@import url(./normailzation.css);
+
+body{
+    background-color: lemonchiffon;
+}
+main {
+    width: 480px;
+    margin: 40px auto;
+    border: 1px solid maroon;
+    border-radius: 10px;
+    background-color: maroon;
+    box-shadow: 10px 10px 5px black;
+}
+h1{
+    color: lemonchiffon;
+	font-family: Georgia, 'Times New Roman', Times, serif;  
+	text-align: center;  
+}
+form {
+    color: lemonchiffon;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset {
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+label {
+    text-align: right;
+    flex: 1 1 200px;
+    margin: 10px;
+}
+input {
+    margin: 10px;
+}
+fieldset > input, select {
+    color: black;
+    flex: 1 1 200px;
+    margin: 10px;
+}
+.btn {
+	background-color: #F5AF25;
+	padding: 12px 15px;
+	color: maroon;  
+	font-weight: 700;
+    text-decoration: none;
+	border: none;
+	border-radius: 10px;  
+	box-shadow: inset 4px 4px 8px gold, inset -4px -4px 8px sienna;    
+}
+.btn:active {  
+	box-shadow: inset 4px 4px 8px sienna, inset -4px -4px 8px gold;  
+}
+@media screen and (max-width:520px) {
+    main {
+        width: 98%;
+        box-shadow: none;
+    }
+    fieldset {
+        flex-flow: column nowrap;
+    }
+    fieldset > input, label, select {
+        flex: 1 1 auto;
+    }
+    label {
+        text-align: left;
+    }
+}
